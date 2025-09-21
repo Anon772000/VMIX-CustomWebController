@@ -10,15 +10,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   background: linear-gradient(135deg, rgba(5, 15, 28, 0.92), rgba(14, 25, 44, 0.9));
   border: 1px solid rgba(37, 122, 193, 0.3);
   border-radius: 24px;
   padding: 1.75rem 2rem;
   box-shadow: 0 20px 42px rgba(2, 6, 14, 0.6);
+
+  background: linear-gradient(135deg, rgba(255, 79, 31, 0.38), rgba(10, 23, 38, 0.85));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  padding: 1.75rem 2rem;
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.35);
+
 }
 
 .brand-identity {
   display: flex;
+
   align-items: center;
   gap: 1.35rem;
 }
@@ -45,6 +54,18 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #f4f7ff;
+
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.brand-mark {
+  font-family: 'Barlow Condensed', 'Barlow', sans-serif;
+  font-size: clamp(2.6rem, 5vw, 3.2rem);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+
 }
 
 .brand-word.primary {
@@ -54,19 +75,35 @@
 .brand-word.accent {
   font-weight: 700;
   color: var(--brand-primary);
+
 }
 
 .brand-domain {
   font-size: clamp(1rem, 2.6vw, 1.35rem);
   letter-spacing: 0.16em;
   color: rgba(144, 192, 255, 0.8);
+
+  margin-left: 0.25rem;
+}
+
+.brand-domain {
+  margin-left: 0.35rem;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.7);
+
 }
 
 .brand-tagline {
   margin: 0;
+
   color: rgba(214, 228, 249, 0.85);
   font-size: 0.95rem;
   letter-spacing: 0.05em;
+
+  color: rgba(230, 236, 245, 0.85);
+  font-size: 0.95rem;
+
 }
 
 .connection-indicator {
@@ -75,12 +112,20 @@
   gap: 0.75rem;
   padding: 0.85rem 1.25rem;
   border-radius: 999px;
+
   background: linear-gradient(135deg, rgba(21, 34, 55, 0.82), rgba(10, 18, 32, 0.86));
   border: 1px solid rgba(23, 147, 255, 0.25);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: rgba(210, 228, 255, 0.9);
+
+  background: rgba(6, 11, 18, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
 }
 
 .connection-indicator .indicator-dot {
@@ -89,6 +134,9 @@
   border-radius: 50%;
   background: radial-gradient(circle, rgba(54, 236, 189, 0.9), rgba(18, 151, 121, 0.9));
   box-shadow: 0 0 12px rgba(28, 201, 165, 0.75);
+
+  background: radial-gradient(circle, rgba(0, 255, 163, 0.85), rgba(0, 148, 111, 0.9));
+  box-shadow: 0 0 12px rgba(0, 255, 163, 0.8);
 }
 
 .connection-indicator[data-status='offline'] .indicator-dot {
@@ -112,6 +160,7 @@
     align-self: stretch;
     justify-content: center;
   }
+  color: rgba(255, 79, 31, 0.9);
 }
 
 .layout-grid {
