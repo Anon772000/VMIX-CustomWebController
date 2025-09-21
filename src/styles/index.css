@@ -1,0 +1,43 @@
+:root {
+  color-scheme: dark;
+  font-family: 'Barlow', 'Barlow Condensed', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #03060c;
+  color: #e7f1ff;
+  --brand-primary: #ff5a33;
+  --brand-primary-dark: #d23d1a;
+  --brand-secondary: #06162b;
+  --brand-surface: rgba(8, 15, 28, 0.92);
+  --brand-card: rgba(10, 16, 29, 0.78);
+  --brand-border: rgba(36, 78, 126, 0.28);
+  --brand-glow: rgba(255, 90, 51, 0.32);
+  --brand-electric: #19a9ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at 85% 10%, rgba(25, 169, 255, 0.22), transparent 55%),
+    radial-gradient(circle at 15% 25%, rgba(255, 90, 51, 0.2), transparent 50%),
+    linear-gradient(180deg, #040911 0%, #030508 45%, #040911 100%);
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
